@@ -113,6 +113,10 @@ for i in range(1, 3):
 # O terceiro é o step, ou seja, quanto vai adicionar no fim de cada loop
 for i in range(0, 10, 2):
     print(i)
+
+# Para uma contagem decrescente
+for i in range(0, -10, -1):
+    print(i)
 ```
 ### O `break` e o `continue`
 
