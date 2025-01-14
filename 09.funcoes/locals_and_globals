@@ -1,0 +1,10 @@
+a = 5
+
+def change_and_print():
+#    global a # makes a local a global (quite dangerous)
+    a = 7
+    print(a)
+
+print(a)
+change_and_print()
+print(a)
