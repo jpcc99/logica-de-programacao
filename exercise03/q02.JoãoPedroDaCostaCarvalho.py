@@ -2,12 +2,13 @@ list_a = [int(i) for i in input("").split(" ")]
 list_b = [int(i) for i in input("").split(" ")]
 list_c = []
 
-for i in list_a:
-    if i not in list_c:
-        list_c.append(i)
+def extend_if_not_in(list_a, list_b):
+    for i in list_a:
+        if i not in list_b:
+            list_b.append(i)
 
-for i in list_b:
-    if i not in list_c:
-        list_c.append(i)
+
+extend_if_not_in(list_a, list_c)
+extend_if_not_in(list_b, list_c)
 
 print(list_c)
